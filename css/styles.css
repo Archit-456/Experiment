@@ -1,0 +1,208 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "merriweather", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* Navigation bar */
+
+.navbar {
+  margin-bottom: 5%;
+
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 0 10%;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Title SECTION */
+
+#title {
+  background-image: linear-gradient(red, rgb(109, 35, 179));
+  padding: 2% 10%;
+
+  color: white;
+  /* max-height: 400px; */
+}
+
+.title-pic {
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+#title h1 {
+  font-size: 3.7rem;
+
+  margin-bottom: 3rem;
+}
+
+/* Button */
+
+.btn {
+  font-weight: 500;
+}
+
+/* Profile Section */
+
+.profiles {
+  padding: 4% 2%;
+  text-align: center;
+
+  color: yellow;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.prof-heading{
+
+  color:rgb(255, 0, 76);
+  margin:2rem auto 4rem auto;
+}
+
+.card {
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5%;
+
+  background-color: #353153;
+}
+
+.card p {
+  padding: 0.5;
+}
+/* Writeup  section  */
+
+#writeup {
+  background-color: rgb(255, 221, 221);
+  padding: 4% 10%;
+}
+
+.content {
+  padding: 0 3%;
+}
+
+.sidebar-nav ul {
+  padding: 10%;
+}
+
+.sidebar-nav li {
+  color: chartreuse;
+  list-style: none;
+  text-align: left;
+}
+
+.sidebar-nav a {
+  color: red;
+  font-size: 1.3rem;
+}
+
+.content-pic {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+/* contact section */
+
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* ----------------------------------------rates section-------------------------------------------------------------- */
+#rates {
+  padding: 4% 10%;
+
+  background-image: linear-gradient(yellow red);
+}
+
+#rates .card {
+  background-color: purple;
+  text-align: center;
+
+  color: white;
+}
+
+.card-header {
+  background-color: rgb(255, 147, 188);
+  color: purple;
+}
+/* -------------------------------------------FOOTER SECTION----------------------------------------------------------- */
+footer {
+  background-color: rgb(93, 30, 153);
+  text-align: center;
+  color: WHITE;
+  padding: 2px;
+}
+
+/* ---------------------------------------------MEDIA QUERIES-------------------------------------------------------------- */
+
+@media (max-width: 810px) {
+  .row {
+    text-align: center;
+  }
+
+  .title-pic {
+    margin-top: 40px;
+  }
+
+  #contact {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+  }
+.content{
+  text-align: justify;
+}
+.navigation{
+
+  margin-top:2rem;
+}
+}
+
+@media (max-width: 540px) {
+  .title-pic {
+    width: 90%;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #a88205;
+    box-shadow: 0 0 5px #ffffff;
+  }
+  50% {
+    background-color: #e81919;
+    box-shadow: 0 0 20px #ff00bf;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+}
+.glow {
+  animation: glowing 1300ms infinite;
+}
